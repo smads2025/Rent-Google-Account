@@ -1,0 +1,12 @@
+{
+    "nav": {
+        "home": "Trang Chủ",
+        "products": "Sản Phẩm",
+        "services": "Dịch Vụ",
+        "about": "Về Chúng Tôi",
+        "contact": "Liên Hệ"
+    },
+    "hero": {
+        "cta": "Bắt Đầu Ngay"
+    }
+}
