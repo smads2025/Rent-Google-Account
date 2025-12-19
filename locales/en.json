@@ -7,6 +7,14 @@
         "contact": "Contact"
     },
     "hero": {
-        "cta": "Get Started"
+        "prefix": "Invoice Account Rental",
+        "typingTexts": [
+            "Google Account",
+            "Facebook Account"
+        ],
+        "benefit-item-1": "Accounts that can run all product types",
+        "benefit-item-2": "Discounted rates for high spending accounts",
+        "benefit-item-3": "Accounts with fast approval & strong delivery",
+        "cta": "Get consultation now"
     }
 }

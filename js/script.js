@@ -10,12 +10,76 @@ document.addEventListener('DOMContentLoaded', function () {
     // 2. Initialize scroll effect
     handleScroll();
 
-    // 3. Start typing effect after 1 second
-    setTimeout(typeEffect, 1000);
+    // 3. Initialize typing effect with current language
+    initTypingEffect();
 });
 
 // ============ Variables ============
 let currentPage = 'home';
+
+// ============ Typing i18n Data ============
+const typingI18n = {
+    vi: [
+        "Tài khoản Google",
+        "Tài khoản Facebook"
+    ],
+    en: [
+        "Google Account",
+        "Facebook Account"
+    ]
+};
+
+// ============ Typing Effect Variables ============
+const typingText = document.getElementById('typingText');
+// Get initial language from localStorage or default to 'vi'
+const getInitialLang = () => localStorage.getItem('language') || 'vi';
+let texts = typingI18n[getInitialLang()];
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+let typingSpeed = 100;
+
+// ============ Initialize Typing Effect ============
+function initTypingEffect() {
+    // Reset typing with current language
+    const currentLang = getInitialLang();
+    texts = typingI18n[currentLang];
+    textIndex = 0;
+    charIndex = 0;
+    isDeleting = false;
+    typingText.textContent = '';
+
+    // Start typing effect after 1 second
+    setTimeout(typeEffect, 1000);
+}
+
+// ============ Typing Effect Function ============
+function typeEffect() {
+    const currentText = texts[textIndex];
+
+    if (isDeleting) {
+        typingText.textContent = currentText.substring(0, charIndex - 1);
+        charIndex--;
+        typingSpeed = 50;
+    } else {
+        typingText.textContent = currentText.substring(0, charIndex + 1);
+        charIndex++;
+        typingSpeed = 100;
+    }
+
+    if (!isDeleting && charIndex === currentText.length) {
+        typingSpeed = 2000;
+        isDeleting = true;
+    }
+
+    if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % texts.length;
+        typingSpeed = 500;
+    }
+
+    setTimeout(typeEffect, typingSpeed);
+}
 
 // ============ Scroll Effect ============
 function handleScroll() {
@@ -60,7 +124,7 @@ function setActiveNavItem(page) {
     });
 }
 
-// Handle navigation clicks - FIXED SELECTOR
+// Handle navigation clicks
 document.querySelectorAll('.nav-link, .mobile-nav-link').forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
@@ -72,8 +136,8 @@ document.querySelectorAll('.nav-link, .mobile-nav-link').forEach(link => {
             toggleMobileMenu();
         }
 
-        // Optional: Scroll to section if exists
-        const sectionId = page; // home, products, services, etc.
+        // Scroll to section if exists
+        const sectionId = page;
         const section = document.getElementById(sectionId);
         if (section) {
             section.scrollIntoView({ behavior: 'smooth' });
@@ -83,6 +147,12 @@ document.querySelectorAll('.nav-link, .mobile-nav-link').forEach(link => {
 
 // ============ Language Switcher ============
 document.querySelectorAll('.lang-btn').forEach(btn => {
+    // Set active button based on saved language
+    const currentLang = getInitialLang();
+    if (btn.dataset.lang === currentLang) {
+        btn.classList.add('active');
+    }
+
     btn.addEventListener('click', function () {
         const lang = this.dataset.lang;
 
@@ -91,53 +161,33 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
             changeLanguage(lang);
         }
 
-        // Update UI
+        // Update UI immediately
         document.querySelectorAll('.lang-btn').forEach(b => {
             b.classList.toggle('active', b.dataset.lang === lang);
         });
     });
 });
 
-// ============ Typing Effect ============
-const typingText = document.getElementById('typingText');
-const texts = [
-    'Microsoft Ads Agency',
-    'Google Ads Agency',
-    'TikTok Ads Agency',
-    'Facebook Ads Agency',
-    'LinkedIn Ads Agency'
-];
-let textIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
-let typingSpeed = 100;
+// ============ Listen for Language Changes ============
+// This ensures typing effect updates when language changes via i18.js
+window.addEventListener('languageChanged', function (event) {
+    const lang = event.detail.lang;
 
-function typeEffect() {
-    const currentText = texts[textIndex];
+    // Update typing texts
+    texts = typingI18n[lang];
+    textIndex = 0;
+    charIndex = 0;
+    isDeleting = false;
+    typingText.textContent = '';
 
-    if (isDeleting) {
-        typingText.textContent = currentText.substring(0, charIndex - 1);
-        charIndex--;
-        typingSpeed = 50;
-    } else {
-        typingText.textContent = currentText.substring(0, charIndex + 1);
-        charIndex++;
-        typingSpeed = 100;
-    }
+    // Update language buttons UI (already handled by i18.js, but just in case)
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+    });
 
-    if (!isDeleting && charIndex === currentText.length) {
-        typingSpeed = 2000;
-        isDeleting = true;
-    }
-
-    if (isDeleting && charIndex === 0) {
-        isDeleting = false;
-        textIndex = (textIndex + 1) % texts.length;
-        typingSpeed = 500;
-    }
-
-    setTimeout(typeEffect, typingSpeed);
-}
+    // Restart typing effect after a short delay
+    setTimeout(typeEffect, 500);
+});
 
 // ============ Testimonial Tabs ============
 const tabPills = document.querySelectorAll('.tab-pill');
@@ -188,7 +238,7 @@ tabPills.forEach(pill => {
     });
 });
 
-// Scroll To Top Functionality
+// ============ Scroll To Top Functionality ============
 const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
 // Show/hide button based on scroll position

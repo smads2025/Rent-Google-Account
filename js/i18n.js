@@ -13,6 +13,9 @@ async function loadLanguage(lang) {
         localStorage.setItem('language', lang);
         currentLang = lang;
 
+        // Dispatch custom event for other scripts to listen to
+        window.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang } }));
+
     } catch (error) {
         console.log('Error loading language, using fallback');
         useFallback(lang);
@@ -26,7 +29,10 @@ function applyTranslations() {
         const text = getTranslation(key);
 
         if (text) {
-            element.textContent = text;
+            // Skip typing text elements (handled by separate script)
+            if (!element.classList.contains('typing-text')) {
+                element.textContent = text;
+            }
         }
     });
 }
@@ -41,7 +47,7 @@ function getTranslation(key) {
         if (!result) break;
     }
 
-    return result || element.textContent; // Fallback to current text
+    return result || key; // Fallback to key if translation not found
 }
 
 // Fallback translations
@@ -53,7 +59,8 @@ function useFallback(lang) {
             'nav.services': 'Dịch Vụ',
             'nav.about': 'Về Chúng Tôi',
             'nav.contact': 'Liên Hệ',
-            'hero.cta': 'Bắt Đầu Ngay'
+            'hero.cta': 'Bắt Đầu Ngay',
+            'hero.prefix': 'Thuê tài khoản invoice'
         },
         en: {
             'nav.home': 'Home',
@@ -61,12 +68,20 @@ function useFallback(lang) {
             'nav.services': 'Services',
             'nav.about': 'About Us',
             'nav.contact': 'Contact',
-            'hero.cta': 'Get Started'
+            'hero.cta': 'Get Started',
+            'hero.prefix': 'Rent invoice account'
         }
     };
 
     translations = fallbacks[lang] || fallbacks.vi;
     applyTranslations();
+
+    // Save to localStorage
+    localStorage.setItem('language', lang);
+    currentLang = lang;
+
+    // Dispatch event
+    window.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang } }));
 }
 
 // Change language

@@ -7,6 +7,14 @@
         "contact": "Liên Hệ"
     },
     "hero": {
-        "cta": "Bắt Đầu Ngay"
+        "prefix": "Thuê tài khoản invoice",
+        "typingTexts": [
+            "Tài khoản Google",
+            "Tài khoản Facebook"
+        ],
+        "benefit-item-1": "Tài khoản chạy được tất cả các sản phẩm",
+        "benefit-item-2": "Tài khoản giảm giá khi chi tiêu lớn",
+        "benefit-item-3": "Tài khoản xét duyệt nhanh & phân phối tốt",
+        "cta": "Tư vấn ngay"
     }
 }
