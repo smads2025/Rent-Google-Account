@@ -476,7 +476,7 @@ select {
 }
 
 .typing-text {
-    color: #FBBC04;
+    color: var(--primary-color);
     display: inline-block;
 }
 
@@ -540,7 +540,7 @@ select {
     color: var(--dark-color);
     font-size: 18px;
     font-weight: 600;
-    padding: 16px 24px;
+    padding: 16px 32px;
     border-radius: 12px;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -622,16 +622,16 @@ select {
 
 .partner-title {
     text-align: center;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 700;
-    color: #1f2937;
+    color: var(--primary-text-dark);
     margin-bottom: 56px;
     letter-spacing: -0.5px;
 }
 
 .partner-logos {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 48px;
     align-items: center;
     justify-items: center;
@@ -639,6 +639,8 @@ select {
 
 .partner-logo {
     display: flex;
+    flex-direction: column;
+    gap: 10px;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
@@ -668,6 +670,13 @@ select {
     white-space: nowrap;
 }
 
+.desc-logo {
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.9;
+    color: var(--primary-text-dark);
+}
+
 .logo-google {
     color: #4285f4;
 }
@@ -680,17 +689,6 @@ select {
     color: #00a4ef;
 }
 
-.logo-criteo {
-    color: #ff6b35;
-}
-
-.logo-rtbhouse {
-    color: #ff4757;
-}
-
-.logo-yandex {
-    color: #ff0000;
-}
 
 /* ==================== SECTION 1 ==================== */
 .how-it-helps-section {
@@ -781,11 +779,11 @@ select {
 }
 
 .section-title {
-    font-size: 42px;
-    font-weight: 800;
+    font-size: 36px;
+    font-weight: 700;
     margin-bottom: 32px;
     letter-spacing: -1px;
-    color: #1f2937;
+    color: var(--primary-text-dark);
 }
 
 /* Tab Pills */
@@ -809,12 +807,12 @@ select {
 }
 
 .tab-pill:hover {
-    border-color: #FBBC04;
-    color: #FBBC04;
+    border-color: var(--primary-hover-color);
+    color: var(--primary-text-dark);
 }
 
 .tab-pill.active {
-    background: linear-gradient(135deg, #FBBC04 0%, #764ba2 100%);
+    background: var(--primary-color);
     border-color: transparent;
     color: white;
 }
@@ -831,7 +829,7 @@ select {
 .quote-text {
     font-size: 18px;
     line-height: 1.7;
-    color: #1f2937;
+    color: var(--primary-text-dark);
     font-style: italic;
 }
 
@@ -839,14 +837,14 @@ select {
     margin-top: 20px;
     font-size: 16px;
     font-weight: 600;
-    color: #1f2937;
+    color: var(--primary-text-dark);
     font-style: normal;
 }
 
 .quote-role {
     font-size: 14px;
-    color: #6b7280;
-    font-weight: 500;
+    color: var(--primary-text-dark);
+    opacity: 0.9;
     margin-top: 4px;
 }
 
@@ -864,11 +862,11 @@ select {
 
 .process-heading {
     text-align: center;
-    font-size: 42px;
-    font-weight: 800;
+    font-size: 36px;
+    font-weight: 700;
     margin-bottom: 64px;
     letter-spacing: -1px;
-    color: #1f2937;
+    color: var(--primary-text-dark);
 }
 
 .steps-wrapper {
@@ -888,6 +886,7 @@ select {
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
 }
 
 .step-card:hover {
@@ -896,14 +895,15 @@ select {
 }
 
 .step-card.purple {
-    background: linear-gradient(135deg, #FBBC04 0%, #764ba2 100%);
-    color: white;
+    background: var(--bg-gradient-start);
+    color: var(--btn-secondary-text);
 }
 
 .step-card.white {
-    background: white;
+    background: var(--light-color);
     color: #1f2937;
     border: 2px solid #e5e7eb;
+    border-left: 4px solid #fbbf24;
 }
 
 .step-number {
@@ -921,8 +921,8 @@ select {
 }
 
 .step-card.white .step-number {
-    background: #FBBC04;
-    color: white;
+    background: var(--primary-color);
+    color: var(--light-color);
 }
 
 .step-title {
@@ -938,8 +938,8 @@ select {
 }
 
 .step-card.white .step-description {
-    color: #6b7280;
-    opacity: 1;
+    color: var(--primary-text-dark);
+    opacity: 0.8;
 }
 
 /* Arrow Icons */
@@ -969,7 +969,7 @@ select {
     color: #1f2937;
     font-size: 18px;
     font-weight: 700;
-    padding: 18px 64px;
+    padding: 16px 32px;
     border-radius: 12px;
     text-decoration: none;
     transition: all 0.3s ease;
