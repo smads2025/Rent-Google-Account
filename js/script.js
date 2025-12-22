@@ -249,22 +249,26 @@ const tabPills = document.querySelectorAll('.tab-pill');
 const testimonialText = document.getElementById('testimonialText');
 const testimonialAuthor = document.getElementById('testimonialAuthor');
 const testimonialRole = document.getElementById('testimonialRole');
+const testimonialGif = document.getElementById('testimonialGif');
 
 const testimonials = {
     agencies: {
-        text: "Media Blast streamlined our entire account creation process. We went from waiting weeks to getting premium agency accounts approved in just 48 hours. The quality and reliability have been exceptional for our clients.",
-        author: "Sarah Johnson",
-        role: "Head of Operations, Digital Agency XYZ"
+        text: "Chiến dịch ngành game online được phân phối ổn định nhờ tài khoản Invoice đã xác minh. Ngân sách chi tiêu mượt, hạn chế gián đoạn và giúp tối ưu hiệu quả quảng cáo trong suốt quá trình chạy.",
+        author: "Khách hàng Game Online",
+        role: "Doanh nghiệp phát hành & vận hành trò chơi trực tuyến.",
+        gif: "media/gamebilling.gif"
     },
     affiliates: {
-        text: "As an affiliate marketer, speed is everything. Media Blast gave me instant access to top-tier ad accounts that would have taken months to get approved on my own. My ROI increased by 300% in the first quarter.",
-        author: "Michael Chen",
-        role: "Performance Marketing Lead, Affiliate Network Pro"
+        text: "Các chiến dịch liên quan đến tài sản số được hỗ trợ triển khai trên tài khoản có độ tin cậy cao. Quảng cáo hiển thị đều, kiểm soát rủi ro tốt và phù hợp cho kế hoạch chạy dài hạn.",
+        author: "Khách hàng Crypto",
+        role: "Đội ngũ phát triển dự án & nền tảng blockchain",
+        gif: "media/crypto.gif"
     },
     crypto: {
-        text: "Finding compliant ad accounts for crypto campaigns was nearly impossible until we found Media Blast. They understand the industry and provide accounts that actually work for blockchain and Web3 projects.",
-        author: "Alex Rodriguez",
-        role: "CMO, CryptoVentures Inc"
+        text: "Chiến dịch video được phân phối ổn định với khả năng tiếp cận đúng tệp khách hàng. Tài khoản giúp tối ưu chi phí, tăng lượt xem chất lượng và duy trì hiệu suất quảng cáo liên tục.",
+        author: "Khách hàng Video Smart",
+        role: "Đơn vị sản xuất nội dung & marketing video",
+        gif: "media/videosmart.gif"
     }
 };
 
@@ -280,15 +284,18 @@ tabPills.forEach(pill => {
         testimonialText.style.opacity = '0';
         testimonialAuthor.style.opacity = '0';
         testimonialRole.style.opacity = '0';
+        testimonialGif.style.opacity = '0';
 
         setTimeout(() => {
             testimonialText.textContent = testimonial.text;
             testimonialAuthor.textContent = testimonial.author;
             testimonialRole.textContent = testimonial.role;
+            testimonialGif.src = testimonial.gif;
 
             testimonialText.style.opacity = '1';
             testimonialAuthor.style.opacity = '1';
             testimonialRole.style.opacity = '1';
+            testimonialGif.style.opacity = '1';
         }, 300);
     });
 });

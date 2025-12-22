@@ -539,8 +539,8 @@ select {
     background: var(--primary-color);
     color: var(--dark-color);
     font-size: 18px;
-    font-weight: 600;
-    padding: 16px 32px;
+    font-weight: 500;
+    padding: 12px 20px;
     border-radius: 12px;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -626,14 +626,28 @@ select {
     text-transform: uppercase;
     font-weight: 700;
     color: var(--primary-text-dark);
-    margin-bottom: 56px;
+    margin-bottom: 16px;
     letter-spacing: -0.5px;
 }
+
+.partner-decs {
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--primary-text-dark);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.partner-decs .desc-bold {
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+
 
 .partner-logos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 48px;
+    gap: 20px;
     align-items: center;
     justify-items: center;
 }
@@ -646,7 +660,6 @@ select {
     justify-content: center;
     transition: all 0.3s ease;
     opacity: 0.7;
-    filter: grayscale(100%);
 }
 
 .partner-logo:hover {
@@ -655,9 +668,17 @@ select {
     transform: translateY(-4px);
 }
 
+.logo-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 48px;
+    min-height: 48px;
+}
+
 .partner-logo svg,
 .partner-logo img {
-    max-width: 120px;
+    max-width: 48px;
     max-height: 48px;
     width: auto;
     height: auto;
@@ -666,7 +687,7 @@ select {
 /* Partner Logo Text Styles */
 .logo-text {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     white-space: nowrap;
 }
@@ -676,20 +697,36 @@ select {
     line-height: 1.6;
     opacity: 0.9;
     color: var(--primary-text-dark);
+    min-height: 65px;
 }
 
-.logo-google {
-    color: #4285f4;
+.cta-partner {
+    text-align: center;
+    margin-top: 30px;
 }
 
-.logo-xandr {
-    color: #7b68ee;
+.cta-partner button {
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--dark-color);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(251, 191, 36, 0.3);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-.logo-microsoft {
-    color: #00a4ef;
+.cta-partner button:hover {
+    background: var(--primary-hover-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 30px rgba(251, 191, 36, 0.5);
 }
-
 
 /* ==================== SECTION 1 ==================== */
 .how-it-helps-section {
@@ -722,56 +759,6 @@ select {
 .video-testimonial:hover {
     transform: translateY(-4px);
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
-}
-
-.video-thumbnail {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, #FBBC04 0%, #764ba2 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.video-thumbnail::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
-}
-
-.play-button {
-    width: 80px;
-    height: 80px;
-    background: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 2;
-    transition: all 0.3s ease;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-}
-
-.video-testimonial:hover .play-button {
-    transform: scale(1.1);
-    background: #fbbf24;
-}
-
-.play-button svg {
-    width: 32px;
-    height: 32px;
-    fill: #FBBC04;
-    margin-left: 4px;
-}
-
-.video-testimonial:hover .play-button svg {
-    fill: #1f2937;
 }
 
 /* Right Side - Content */
@@ -971,8 +958,8 @@ select {
     background: #fbbf24;
     color: #1f2937;
     font-size: 18px;
-    font-weight: 700;
-    padding: 16px 32px;
+    font-weight: 500;
+    padding: 12px 20px;
     border-radius: 12px;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -1327,12 +1314,13 @@ select {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 32px;
+    padding: 22px;
     background: white;
     border-radius: 16px;
-    border: 2px solid #f3f4f6;
+    border: 2px solid var(--primary-color);
     transition: all 0.3s ease;
-    min-height: 120px;
+    width: 290px;
+    min-height: 250px;
 }
 
 .partner-logo:hover {
@@ -1881,7 +1869,6 @@ select {
     .partner-logos {
         grid-template-columns: repeat(2, 2fr);
         gap: 40px;
-        padding-right: 40px;
     }
 
     .partner-logo svg,
@@ -2351,11 +2338,6 @@ select {
     .partner-title {
         font-size: 24px;
         margin-bottom: 32px;
-    }
-
-    .partner-logos {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
     }
 
     .partner-logo svg,

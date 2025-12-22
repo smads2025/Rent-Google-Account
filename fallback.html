@@ -1,0 +1,779 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Media Blast | Premium Advertising Agency Accounts</title>
+    <meta name="description"
+        content="Create premium advertising agency accounts with high quality, fast approval, multiple payment methods.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Preload language files -->
+    <link rel="preload" href="./locales/vi.json" as="fetch" crossorigin="anonymous">
+    <link rel="preload" href="./locales/en.json" as="fetch" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header-container" id="header">
+        <nav class="nav-bar"><!-- Logo -->
+            <div class="logo-container">
+                <div class="logo" id="logoText">
+                    YourBrand
+                </div>
+            </div>
+            <!-- Desktop Menu -->
+            <div class="desktop-menu" id="desktopMenu">
+                <a href="#home" class="nav-link active" data-page="home" data-i18n="nav.home">Trang Chủ</a>
+                <a href="#products" class="nav-link" data-page="products" data-i18n="nav.products">Sản Phẩm</a>
+                <a href="#services" class="nav-link" data-page="services" data-i18n="nav.services">Dịch Vụ</a>
+                <a href="#about" class="nav-link" data-page="about" data-i18n="nav.about">Về Chúng Tôi</a>
+                <a href="#contact" class="nav-link" data-page="contact" data-i18n="nav.contact">Liên Hệ</a>
+            </div>
+            <!-- Right Section -->
+            <div class="right-section">
+                <!-- Language Switcher -->
+                <div class="lang-switcher-container"><button class="lang-btn active" data-lang="vi">VI</button> <button
+                        class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <!-- Hamburger Menu -->
+                <div class="hamburger" id="hamburger"><span></span> <span></span> <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay">
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <div class="mobile-logo">
+                    YourBrand
+                </div><button class="close-menu" id="closeMenu">×</button>
+            </div>
+            <div class="mobile-nav">
+                <a href="#home" class="mobile-nav-link active" data-page="home" data-i18n="nav.home">Trang Chủ</a>
+                <a href="#products" class="mobile-nav-link" data-page="products" data-i18n="nav.products">Sản Phẩm</a>
+                <a href="#services" class="mobile-nav-link" data-page="services" data-i18n="nav.services">Dịch Vụ</a>
+                <a href="#about" class="mobile-nav-link" data-page="about" data-i18n="nav.about">Về Chúng Tôi</a>
+                <a href="#contact" class="mobile-nav-link" data-page="contact" data-i18n="nav.contact">Liên Hệ</a>
+            </div>
+            <div class="mobile-lang-section">
+                <p class="mobile-lang-title">Ngôn ngữ</p>
+                <div class="mobile-lang-buttons"><button class="lang-btn active" data-lang="vi">VI</button> <button
+                        class="lang-btn" data-lang="en">EN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <!-- Left Content -->
+            <div class="hero-left">
+                <div class="hero-logo-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5z" />
+                    </svg>
+                </div>
+                <h1 class="hero-headline">
+                    <span data-i18n="hero.prefix">Thuê tài khoản invoice</span>
+                    <span class="typing-wrapper">
+                        <span class="typing-text" id="typingText"></span>
+                        <span class="typing-cursor"></span>
+                    </span>
+                </h1>
+
+
+                <ul class="hero-benefits">
+                    <li class="hero-benefit-item">
+                        <div class="hero-check-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                            </svg>
+                        </div>
+
+                        <span data-i18n="hero.benefit-item-1">
+                            Tài khoản chạy được tất cả các sản phẩm
+                        </span>
+                    </li>
+                    <li class="hero-benefit-item">
+                        <div class="hero-check-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                            </svg>
+                        </div>
+
+                        <span data-i18n="hero.benefit-item-2">
+                            Tài khoản giảm giá khi chi tiêu lớn
+                        </span>
+                    </li>
+                    <li class="hero-benefit-item">
+                        <div class="hero-check-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                            </svg>
+                        </div>
+
+                        <span data-i18n="hero.benefit-item-3">
+                            Tài khoản xét duyệt nhanh & phân phối tốt
+                        </span>
+                    </li>
+
+                    <button class="hero-cta-button" data-i18n="hero.cta">Tư vấn ngay</button>
+            </div>
+            <!-- Right Content - Video Card -->
+            <div class="hero-right">
+                <div class="hero-video-card">
+                    <div class="hero-video-thumbnail">
+                        <img src="./media/original-72da9e18e9044e9e71210f06b6b64ded.gif" alt="Demo"
+                            class="hero-video-gif">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- PARTNER SECTION -->
+    <section class="partner-section">
+        <div class="partner-container">
+            <h2 class="partner-title" data-i18n="partner.tiltle">Tài khoản chạy được nhiều ngành</h2>
+            <p class="partner-decs">Bạn đang gặp vấn đề với tài khoản quảng cáo bị hạn chế, từ chối sản phẩm khó? Chúng
+                tôi cung cấp tài khoản: <br>
+                <b class="desc-bold"> đã xác minh – invoice rõ ràng – hỗ trợ setup & kháng</b>
+
+            </p>
+            <div class="partner-logos">
+                <div class="partner-logo">
+                    <div class="logo-icon">
+                        <img src="img/icons8-game-64.png" alt="" srcset="">
+                    </div>
+                    <div class="logo-text logo-google">
+                        Trò chơi trực tuyến
+                    </div>
+                    <div class="desc-logo">
+                        Tài khoản invoice – xử lý chiến dịch ngành game, cá cược, giải trí online.
+                    </div>
+                </div>
+                <div class="partner-logo">
+                    <div class="logo-icon">
+                        <img src="img/icons8-coin-64.png" alt="" srcset="">
+                    </div>
+                    <div class="logo-text logo-xandr">
+                        Tiền mã hoá
+                    </div>
+                    <div class="desc-logo">
+                        Đã xác minh giấy phép, chạy ổn định các chiến dịch Crypto.
+                    </div>
+                </div>
+                <div class="partner-logo">
+                    <div class="logo-icon">
+                        <img src="img/icons8-capsule-48.png" alt="" srcset="">
+                    </div>
+                    <div class="logo-text logo-google">
+                        Thực phẩm chức năng
+                    </div>
+                    <div class="desc-logo">
+                        Hỗ trợ landing – content – hạn chế disapprove.
+                    </div>
+                </div>
+                <div class="partner-logo">
+                    <div class="logo-icon">
+                        <img src="img/icons8-protect-50.png" alt="" srcset="">
+                    </div>
+                    <div class="logo-text logo-microsoft">
+                        Sản phẩm vi phạm chính sách
+                    </div>
+                    <div class="desc-logo">
+                        Tài khoản trust cao, giảm checkpoint & khóa tài khoản.
+                    </div>
+                </div>
+            </div>
+            <div class="cta-partner">
+                <button type="button">Tư vấn ngay</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1-->
+    <section class="how-it-helps-section">
+        <div class="how-it-helps-container">
+            <!-- Left: Video Testimonial -->
+            <div class="video-testimonial">
+                <img id="testimonialGif" src="media/gamebilling.gif" alt="Testimonial GIF" />
+            </div>
+            <!-- Right: Content -->
+            <div class="testimonial-content">
+                <h2 class="section-title">Các nhóm khách hàng lớn của chúng tôi</h2>
+                <!-- Tab Pills -->
+                <div class="tab-pills">
+                    <div class="tab-pill active" data-tab="agencies">
+                        Gamebilling
+                    </div>
+                    <div class="tab-pill" data-tab="affiliates">
+                        Crypto
+                    </div>
+                    <div class="tab-pill" data-tab="crypto">
+                        Video smart
+                    </div>
+                </div>
+                <!-- Testimonial Quote -->
+                <div class="testimonial-quote">
+                    <p class="quote-text" id="testimonialText">"Chiến dịch ngành game online được phân phối ổn định nhờ
+                        tài khoản Invoice đã xác minh.
+                        Ngân sách chi tiêu mượt, hạn chế gián đoạn và giúp tối ưu hiệu quả quảng cáo trong suốt quá
+                        trình chạy."</p>
+                    <div class="quote-author" id="testimonialAuthor">
+                        @Sarah Johnson
+                    </div>
+                    <div class="quote-role" id="testimonialRole">
+                        Khách hàng có sản phẩm trò chơi trực tuyến
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section class="process-section">
+        <div class="process-container">
+            <h2 class="process-heading">Quy trình cung cấp tài khoản</h2>
+            <!-- Steps -->
+            <div class="steps-wrapper">
+                <!-- Step 1 -->
+                <div class="step-card purple">
+                    <div class="step-number">
+                        1
+                    </div>
+                    <h3 class="step-title">Tư vấn & đánh giá nhu cầu</h3>
+                    <p class="step-description">Tiếp nhận thông tin, phân tích ngành nghề và đề xuất loại tài khoản phù
+                        hợp nhất để triển khai quảng cáo.</p>
+                </div>
+                <!-- Arrow -->
+                <div class="step-arrow">
+                    <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+                    </svg>
+                </div>
+                <!-- Step 2 -->
+                <div class="step-card white">
+                    <div class="step-number">
+                        2
+                    </div>
+                    <h3 class="step-title">Cung cấp & phân quyền tài khoản</h3>
+                    <p class="step-description">Thiết lập tài khoản phù hợp, phân quyền quản lý và hỗ trợ khách hàng
+                        triển khai chiến dịch.
+                    </p>
+                </div>
+                <!-- Arrow -->
+                <div class="step-arrow">
+                    <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+                    </svg>
+                </div>
+                <!-- Step 3 -->
+                <div class="step-card white">
+                    <div class="step-number">
+                        3
+                    </div>
+                    <h3 class="step-title">Tài khoản hoạt động & chi tiêu ổn định</h3>
+                    <p class="step-description">Theo dõi ngân sách, hỗ trợ kiểm soát hiệu suất và cung cấp báo cáo trong
+                        suốt quá trình chạy quảng cáo.</p>
+                </div>
+            </div>
+            <!-- CTA Button -->
+            <div class="process-cta"><button class="cta-button">Bắt đầu ngay</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section class="feature-section">
+        <div class="feature-container">
+            <!-- Left: Content -->
+            <div class="feature-content">
+                <div class="feature-icon">
+                    <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-7-2h2v-4h4v-2h-4V7h-2v4H7v2h4z" />
+                    </svg>
+                </div>
+                <h2 class="feature-title">Hệ thống tài khoản quảng cáo Google dành cho chiến dịch quy mô lớn</h2>
+                <p class="feature-description">Chúng tôi cung cấp hệ thống tài khoản quảng cáo Google với khả năng đáp
+                    ứng nhu cầu triển khai chiến dịch quy mô lớn. <br>
+                    Phù hợp cho các doanh nghiệp, đội ngũ marketing và agency cần vận hành nhiều chiến dịch cùng lúc.
+                </p>
+                <p class="feature-description">Đội ngũ hỗ trợ đồng hành trong quá trình thiết lập và triển khai, giúp
+                    quảng cáo được phân phối ổn định và hiệu quả.</p>
+                <div class="feature-platforms"><span class="platform-badge">Google Ads</span> <span
+                        class="platform-badge">Microsoft Ads</span> <span class="platform-badge">DV360</span> <span
+                        class="platform-badge">Criteo</span> <span class="platform-badge">Xandr</span> <span
+                        class="platform-badge">RTB House</span>
+                </div>
+            </div>
+            <!-- Right: Feature Image -->
+            <div class="feature-image">
+                <img src="./media/Data-1.gif" alt="Demo" class="video-gif-section">
+            </div>
+    </section>
+
+    <!-- SECTION 4 -->
+    <section class="feature-section reversed">
+        <div class="feature-container">
+            <!-- Left: Feature Image -->
+            <div class="feature-image">
+                <img src="./media/Create-Account-1.gif" alt="Demo" class="video-gif-section">
+            </div>
+            <!-- Right: Content -->
+            <div class="feature-content">
+                <div class="feature-icon">
+                    <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z" />
+                    </svg>
+                </div>
+                <h2 class="feature-title">Giải pháp tài khoản Invoice cho ngành quảng cáo đặc thù</h2>
+                <p class="feature-description">Tài khoản Invoice phù hợp với các ngành quảng cáo có yêu cầu kiểm duyệt
+                    cao hoặc đặc thù về nội dung.</p>
+                <p class="feature-description">Hỗ trợ triển khai chiến dịch đúng quy trình, đảm bảo khả năng phân phối
+                    ổn định và hạn chế gián đoạn.</p>
+                <p class="feature-description">Giải pháp giúp doanh nghiệp tối ưu chi tiêu và tiếp cận khách hàng hiệu
+                    quả hơn trong quá trình quảng cáo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5 -->
+    <section class="adcore-section">
+        <div class="adcore-container">
+            <!-- Header Content -->
+            <div class="adcore-header">
+                <h2 class="adcore-heading">Hỗ trợ triển khai chiến dịch quảng cáo</h2>
+                <p class="adcore-description">Chúng tôi đồng hành cùng khách hàng trong suốt quá trình vận hành chiến
+                    dịch, từ thiết lập ban đầu đến tối ưu và theo dõi hiệu quả.</p>
+                <!-- Award Logos Row -->
+                <div class="award-logos">
+                    <div class="award-logo">
+                        <div class="award-logo-placeholder">
+                            Giải thưởng 1
+                        </div>
+                    </div>
+                    <div class="award-logo">
+                        <div class="award-logo-placeholder">
+                            Giải thưởng 2
+                        </div>
+                    </div>
+                    <div class="award-logo">
+                        <div class="award-logo-placeholder">
+                            Giải thưởng 3
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image Grid -->
+            <div class="adcore-grid">
+                <!-- Column 1: Award Ceremony -->
+                <div class="adcore-image award-ceremony">
+                    <div class="image-placeholder">
+                        <div class="image-placeholder-icon">
+                            <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                            </svg>
+                        </div>
+                        <div class="image-placeholder-text">
+                            Award Ceremony Photo
+                        </div>
+                    </div>
+                </div>
+                <!-- Column 2: Team Celebration with Award Overlay -->
+                <div class="adcore-image team-celebration">
+                    <div class="image-placeholder">
+                        <div class="image-placeholder-icon">
+                            <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                            </svg>
+                        </div>
+                        <div class="image-placeholder-text">
+                            Team Celebration
+                        </div>
+                    </div>
+                    <!-- Award Text Overlay -->
+                    <div class="award-overlay">
+                        <div class="award-overlay-title">
+                            Giải thưởng tìm kiếm Apac
+                        </div>
+                        <div class="award-overlay-year">
+                            2024
+                        </div>
+                        <div class="award-overlay-status">
+                            Người chiến thắng
+                        </div>
+                    </div>
+                </div>
+                <!-- Column 3: Office Team -->
+                <div class="adcore-image office-team">
+                    <div class="image-placeholder">
+                        <div class="image-placeholder-icon">
+                            <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z" />
+                            </svg>
+                        </div>
+                        <div class="image-placeholder-text">
+                            Office Team Photo
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6 -->
+    <section class="partners-section">
+        <div class="partners-container">
+            <h2 class="section-heading">Partners of the leading players in the advertising industry</h2>
+            <!-- Partner Logos Grid -->
+            <div class="partners-grid">
+                <div class="partner-logo criteo">
+                    <div class="partner-logo-text">
+                        Criteo
+                    </div>
+                </div>
+                <div class="partner-logo meta">
+                    <div class="partner-logo-text">
+                        Meta Business Partner
+                    </div>
+                </div>
+                <div class="partner-logo google">
+                    <div class="partner-logo-text">
+                        Google Partner
+                    </div>
+                </div>
+                <div class="partner-logo microsoft">
+                    <div class="partner-logo-text">
+                        Microsoft Advertising<br>
+                        Elite Partner
+                    </div>
+                </div>
+                <div class="partner-logo emarsys">
+                    <div class="partner-logo-text">
+                        Emarsys
+                    </div>
+                </div>
+                <div class="partner-logo rtbhouse">
+                    <div class="partner-logo-text">
+                        RTB House
+                    </div>
+                </div>
+                <div class="partner-logo amazon">
+                    <div class="partner-logo-text">
+                        Amazon Ads<br>
+                        Partner
+                    </div>
+                </div>
+                <div class="partner-logo hubspot">
+                    <div class="partner-logo-text">
+                        HubSpot
+                    </div>
+                </div>
+                <div class="partner-logo yandex">
+                    <div class="partner-logo-text">
+                        Yandex
+                    </div>
+                </div>
+            </div>
+            <!-- Description -->
+            <p class="partners-description">We've built long-term strategic partnerships with the world's leading
+                advertising platforms and technology providers. These relationships enable us to deliver premium account
+                access, priority support, and exclusive benefits that empower our clients to achieve exceptional
+                campaign performance and sustainable growth.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 7 -->
+    <section class="partner-program-section">
+        <video class="partner-video-bg" autoplay muted loop playsinline>
+            <source src="./media/bb96-4a55-92ac-ef3bbb054ded.mp4" type="video/mp4">
+        </video>
+        <div class="partner-program-container">
+            <!-- Partner Badge -->
+            <div style="text-align: center;"><span class="partner-badge">🏆 ADCORE Technology Partner 2025</span>
+            </div>
+            <!-- Headline -->
+            <h2 class="program-headline">Join Media Blast's Partner Program</h2>
+            <!-- Description -->
+            <p class="program-description">Collaborate with digital agencies worldwide and unlock new revenue streams.
+                Our partner program provides you with the tools, training, and support needed to deliver exceptional
+                value to your clients while growing your business.</p>
+            <!-- Benefits Grid -->
+            <div class="benefits-grid">
+                <!-- Benefit 1 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Gain up to 15% commission using a referral link</h3>
+                    <p class="benefit-description">Earn recurring monthly commissions for every client you refer. The
+                        more you refer, the more you earn—with no cap on your potential revenue.</p>
+                </div>
+                <!-- Benefit 2 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Enrich your skills with training sessions</h3>
+                    <p class="benefit-description">Access in-depth training programs designed to elevate your team's
+                        expertise. Learn best practices, advanced strategies, and platform optimization techniques.</p>
+                </div>
+                <!-- Benefit 3 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Become a certified Marketing Cloud partner</h3>
+                    <p class="benefit-description">Receive official certification and partner badge to showcase your
+                        expertise. Gain credibility, attract more clients, and differentiate your agency in the market.
+                    </p>
+                </div>
+            </div>
+            <!-- CTA Button -->
+            <div class="partner-cta"><button class="cta-button-partner">Become a Partner</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8 -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <h2 class="cta-heading">Get your premium agency and DSP accounts</h2><button class="cta-button">Get
+                Started</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <!-- 1. TOP HIGHLIGHT BAR -->
+        <section class="footer-highlight">
+            <div class="footer-highlight-container">
+                <div class="highlight-left">
+                    <!-- Contact Us -->
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                            </svg>
+                        </div>
+                        <div class="highlight-content">
+                            <div class="highlight-title">
+                                Liên Hệ Chúng Tôi
+                                <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+                                </svg>
+                            </div>
+                            <p class="highlight-desc">Hỗ trợ khách hàng 24/7 - Phản hồi trong 2 giờ</p>
+                        </div>
+                    </div>
+                    <!-- Find a Branch -->
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                            </svg>
+                        </div>
+                        <div class="highlight-content">
+                            <div class="highlight-title">
+                                Tìm Chi Nhánh
+                                <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+                                </svg>
+                            </div>
+                            <p class="highlight-desc">Hơn 50 văn phòng toàn cầu</p>
+                        </div>
+                    </div>
+                    <!-- About Us -->
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+                            </svg>
+                        </div>
+                        <div class="highlight-content">
+                            <div class="highlight-title">
+                                Về Chúng Tôi
+                                <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+                                </svg>
+                            </div>
+                            <p class="highlight-desc">Đối tác công nghệ hàng đầu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="highlight-right">
+                    <div class="award-badge">
+                        <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 2. MAIN FOOTER CONTENT -->
+        <section class="footer-main">
+            <div class="footer-main-container">
+                <!-- Column 1: Company -->
+                <div class="footer-column">
+                    <h3>Công Ty</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about">Về Chúng Tôi</a></li>
+                        <li><a href="#leadership">Ban Lãnh Đạo</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#careers">Tuyển Dụng</a></li>
+                        <li><a href="#contact">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <!-- Column 2: Products -->
+                <div class="footer-column">
+                    <h3>Sản Phẩm</h3>
+                    <ul class="footer-links">
+                        <li><a href="#marketing-cloud">Marketing Cloud</a></li>
+                        <li><a href="#sales-cloud">Sales Cloud</a></li>
+                        <li><a href="#service-cloud">Service Cloud</a></li>
+                        <li><a href="#commerce-cloud">Commerce Cloud</a></li>
+                        <li><a href="#analytics">Analytics Platform</a></li>
+                    </ul>
+                </div>
+                <!-- Column 3: Services -->
+                <div class="footer-column">
+                    <h3>Dịch Vụ</h3>
+                    <ul class="footer-links">
+                        <li><a href="#consulting">Tư Vấn</a></li>
+                        <li><a href="#implementation">Triển Khai</a></li>
+                        <li><a href="#training">Đào Tạo</a></li>
+                        <li><a href="#support">Hỗ Trợ</a></li>
+                        <li><a href="#case-studies">Case Studies</a></li>
+                    </ul>
+                </div>
+                <!-- Column 4: Blog Articles -->
+                <div class="footer-column">
+                    <h3>Bài Viết Nổi Bật</h3>
+                    <ul class="footer-links">
+                        <li><a href="#article1">AI trong Marketing 2024</a></li>
+                        <li><a href="#article2">Chiến Lược Content</a></li>
+                        <li><a href="#article3">Customer Experience</a></li>
+                        <li><a href="#article4">Marketing Automation</a></li>
+                        <li><a href="#article5">Data Analytics Tips</a></li>
+                    </ul>
+                </div>
+                <!-- Column 5: Social & Apps -->
+                <div class="footer-column">
+                    <h3>Theo Dõi</h3>
+                    <div class="social-icons">
+                        <!-- Facebook --> <a href="#facebook" class="social-icon" aria-label="Facebook">
+                            <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg></a>
+                        <!-- Twitter --> <a href="#twitter" class="social-icon" aria-label="Twitter">
+                            <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg></a>
+                        <!-- LinkedIn --> <a href="#linkedin" class="social-icon" aria-label="LinkedIn">
+                            <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg></a>
+                        <!-- Instagram --> <a href="#instagram" class="social-icon" aria-label="Instagram">
+                            <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                            </svg></a>
+                    </div>
+                    <h3 style="margin-top: 16px;">Ứng Dụng</h3>
+                    <div class="app-icons">
+                        <!-- iOS App --> <a href="#ios" class="app-icon" aria-label="iOS App">
+                            <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                            </svg></a>
+                        <!-- Android App --> <a href="#android" class="app-icon" aria-label="Android App">
+                            <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.523 15.341c-.813 0-1.476.662-1.476 1.476s.663 1.476 1.476 1.476c.815 0 1.476-.662 1.476-1.476s-.661-1.476-1.476-1.476zm-11.046 0c-.815 0-1.476.662-1.476 1.476s.661 1.476 1.476 1.476c.815 0 1.476-.662 1.476-1.476s-.661-1.476-1.476-1.476zm11.405-6.02l1.997-3.46c.112-.193.045-.44-.148-.552-.193-.111-.44-.045-.552.148l-2.02 3.498c-1.552-.71-3.294-1.109-5.159-1.109-1.864 0-3.606.398-5.158 1.109L4.822 5.457c-.112-.193-.36-.259-.552-.148-.193.112-.26.36-.148.552l1.997 3.46C2.777 11.221.792 14.345.792 17.93h22.416c0-3.585-1.985-6.709-5.326-8.609zM.792 19.68h22.416v2.07H.792z" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 3. BOTTOM FOOTER -->
+        <section class="footer-bottom">
+            <div class="footer-bottom-container">
+                <div class="footer-logo-text">
+                    YourBrand
+                </div>
+                <div class="footer-locations">
+                    <div class="footer-location">
+                        <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                        </svg> Canada
+                    </div>
+                    <div class="footer-location">
+                        <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                        </svg> USA
+                    </div>
+                    <div class="footer-location">
+                        <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                        </svg> Australia
+                    </div>
+                    <div class="footer-location">
+                        <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                        </svg> China
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Scroll To Top Button -->
+    <button class="scroll-to-top" id="scrollToTopBtn" aria-label="Scroll to top">
+        <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+        </svg></button>
+
+    <script defer src="./js/i18n.js"></script>
+    <script defer src="./js/script.js"></script>
+</body>
+
+</html>
