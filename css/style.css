@@ -571,7 +571,7 @@ select {
 .hero-video-card {
     width: 100%;
     max-width: 560px;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 16 / 12;
     background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
     border-radius: 20px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
@@ -605,7 +605,7 @@ select {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.3;
+    opacity: 0.6;
 }
 
 /* ==================== PARTNER SECTION ==================== */
@@ -623,6 +623,7 @@ select {
 .partner-title {
     text-align: center;
     font-size: 36px;
+    text-transform: uppercase;
     font-weight: 700;
     color: var(--primary-text-dark);
     margin-bottom: 56px;
@@ -781,6 +782,7 @@ select {
 .section-title {
     font-size: 36px;
     font-weight: 700;
+    text-transform: uppercase;
     margin-bottom: 32px;
     letter-spacing: -1px;
     color: var(--primary-text-dark);
@@ -864,6 +866,7 @@ select {
     text-align: center;
     font-size: 36px;
     font-weight: 700;
+    text-transform: uppercase;
     margin-bottom: 64px;
     letter-spacing: -1px;
     color: var(--primary-text-dark);
@@ -1010,7 +1013,7 @@ select {
 .feature-icon {
     width: 64px;
     height: 64px;
-    background: linear-gradient(135deg, #FBBC04 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
     border-radius: 16px;
     display: flex;
     align-items: center;
@@ -1025,11 +1028,12 @@ select {
 }
 
 .feature-title {
-    font-size: 42px;
-    font-weight: 800;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
     margin-bottom: 24px;
     letter-spacing: -1px;
-    color: #1f2937;
+    color: var(--primary-text-dark);
     line-height: 1.2;
 }
 
@@ -1086,31 +1090,17 @@ select {
     background: rgba(0, 0, 0, 0.1);
 }
 
-.image-placeholder {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    color: white;
-}
-
-.image-placeholder-icon {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 16px;
-    opacity: 0.3;
-}
-
-.image-placeholder-icon svg {
+.video-gif-section {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    fill: white;
+    object-fit: cover;
+    opacity: 0.8;
 }
 
-.image-placeholder-text {
-    font-size: 18px;
-    font-weight: 600;
-    opacity: 0.5;
-}
+
 
 /* ==================== SECTION 4 ==================== */
 .feature-section.reversed .feature-container {
@@ -1136,9 +1126,10 @@ select {
 }
 
 .adcore-heading {
-    font-size: 42px;
-    font-weight: 800;
-    color: #1f2937;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary-text-dark);
     margin-bottom: 24px;
     letter-spacing: -1px;
     line-height: 1.2;
@@ -1312,9 +1303,10 @@ select {
 }
 
 .section-heading {
-    font-size: 42px;
+    font-size: 36px;
     font-weight: 800;
-    color: #1f2937;
+    text-transform: uppercase;
+    color: var(--primary-text-dark);
     margin-bottom: 64px;
     letter-spacing: -1px;
     line-height: 1.2;
@@ -1457,8 +1449,9 @@ select {
 
 /* Headline */
 .program-headline {
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 800;
+    text-transform: uppercase;
     color: white;
     margin-bottom: 24px;
     letter-spacing: -1px;
@@ -1572,406 +1565,19 @@ select {
 }
 
 .cta-heading {
-    font-size: 48px;
-    font-weight: 800;
-    color: #1f2937;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary-text-dark);
     margin-bottom: 40px;
     letter-spacing: -1px;
     line-height: 1.2;
 }
 
-/* ==================== SECTION 9 ==================== */
-.testimonials-section {
-    width: 100%;
-    background: white;
-    padding: 100px 24px;
-}
-
-.testimonials-container {
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
-/* Section Heading */
-.testimonials-heading {
-    font-size: 42px;
-    font-weight: 800;
-    color: #1f2937;
-    text-align: center;
-    margin-bottom: 48px;
-    letter-spacing: -1px;
-    line-height: 1.2;
-}
-
-/* Review Ratings Row */
-.review-ratings {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 64px;
-    margin-bottom: 64px;
-    flex-wrap: wrap;
-}
-
-.review-item {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-
-.review-logo {
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.review-logo svg {
-    width: 100%;
-    height: 100%;
-}
-
-.review-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-}
-
-.review-text {
-    font-size: 14px;
-    font-weight: 600;
-    color: #6b7280;
-}
-
-.review-stars {
-    display: flex;
-    gap: 4px;
-}
-
-.star {
-    width: 18px;
-    height: 18px;
-}
-
-.star svg {
-    width: 100%;
-    height: 100%;
-    fill: #fbbf24;
-}
-
-/* Testimonials Grid */
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-}
-
-.testimonial-card {
-    background: white;
-    padding: 40px 32px;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-}
-
-.testimonial-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial-quote {
-    font-size: 16px;
-    line-height: 1.7;
-    color: #4b5563;
-    margin-bottom: 24px;
-    flex: 1;
-}
-
-.testimonial-author {
-    border-top: 1px solid #f3f4f6;
-    padding-top: 20px;
-}
-
-.author-name {
-    font-size: 16px;
-    font-weight: 700;
-    color: #FBBC04;
-    margin-bottom: 4px;
-}
-
-.author-title {
-    font-size: 14px;
-    color: #9ca3af;
-    line-height: 1.5;
-}
-
-/* ==================== SECTION 10 ==================== */
-.cloud-apps-section {
-    width: 100%;
-    background: white;
-    padding: 100px 24px;
-}
-
-.cloud-apps-container {
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
-/* Section Heading */
-.cloud-apps-heading {
-    font-size: 42px;
-    font-weight: 800;
-    color: #1f2937;
-    text-align: center;
-    margin-bottom: 64px;
-    letter-spacing: -1px;
-    line-height: 1.2;
-}
-
-/* Cards Grid */
-.cloud-apps-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-}
-
-/* Product Card */
-.product-card {
-    border-radius: 20px;
-    padding: 40px 32px 32px;
-    display: flex;
-    flex-direction: column;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-}
-
-.product-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
-}
-
-/* Card Themes */
-.product-card.dark-green {
-    background: linear-gradient(135deg, #064e3b 0%, #065f46 100%);
-    color: white;
-}
-
-.product-card.light-mint {
-    background: #f0fdf4;
-    color: #1f2937;
-}
-
-.product-card.light-blue {
-    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
-    color: #1f2937;
-}
-
-/* App Icon */
-.app-icon {
-    width: 56px;
-    height: 56px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    font-weight: 800;
-    margin-bottom: 24px;
-}
-
-.product-card.dark-green .app-icon {
-    background: rgba(255, 255, 255, 0.15);
-    color: white;
-}
-
-.product-card.light-mint .app-icon {
-    background: #10b981;
-    color: white;
-}
-
-.product-card.light-blue .app-icon {
-    background: #3b82f6;
-    color: white;
-}
-
-/* Product Header */
-.product-header {
-    margin-bottom: 16px;
-}
-
-.product-name-row {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 12px;
-}
-
-.product-name {
-    font-size: 24px;
-    font-weight: 800;
-    letter-spacing: -0.5px;
-}
-
-.platform-badges {
-    display: flex;
-    gap: 8px;
-}
-
-.platform-badge {
-    width: 24px;
-    height: 24px;
-    background: white;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 10px;
-    font-weight: 700;
-    color: #6b7280;
-}
-
-.product-description {
-    font-size: 15px;
-    line-height: 1.6;
-    opacity: 0.9;
-    margin-bottom: 32px;
-}
-
-/* Laptop Mockup */
-.laptop-mockup {
-    width: 100%;
-    aspect-ratio: 16 / 10;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    margin-bottom: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-}
-
-.product-card.light-mint .laptop-mockup,
-.product-card.light-blue .laptop-mockup {
-    background: rgba(0, 0, 0, 0.05);
-}
-
-.mockup-placeholder {
-    text-align: center;
-    opacity: 0.3;
-}
-
-.mockup-icon {
-    width: 48px;
-    height: 48px;
-    margin: 0 auto 8px;
-}
-
-.mockup-icon svg {
-    width: 100%;
-    height: 100%;
-    fill: currentColor;
-}
-
-.mockup-text {
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* Primary Button */
-.primary-button {
-    width: 100%;
-    padding: 16px 32px;
-    border: none;
-    border-radius: 10px;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-bottom: 16px;
-}
-
-.primary-button.yellow {
-    background: #fbbf24;
-    color: #1f2937;
-}
-
-.primary-button.yellow:hover {
-    background: #f59e0b;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(251, 191, 36, 0.4);
-}
-
-.primary-button.teal {
-    background: #14b8a6;
-    color: white;
-}
-
-.primary-button.teal:hover {
-    background: #0d9488;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(20, 184, 166, 0.4);
-}
-
-.primary-button.blue {
-    background: #3b82f6;
-    color: white;
-}
-
-.primary-button.blue:hover {
-    background: #2563eb;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
-}
-
-/* Secondary Link */
-.secondary-link {
-    text-align: center;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    transition: all 0.3s ease;
-    margin-top: auto;
-}
-
-.product-card.dark-green .secondary-link {
-    color: white;
-}
-
-.product-card.light-mint .secondary-link {
-    color: #10b981;
-}
-
-.product-card.light-blue .secondary-link {
-    color: #3b82f6;
-}
-
-.secondary-link:hover {
-    transform: translateX(4px);
-}
-
-.secondary-link::after {
-    content: '→';
-    font-size: 16px;
-}
-
 /* ==================== FOOTER STYLES ==================== */
 /* 1. TOP HIGHLIGHT BAR */
 .footer-highlight {
-    background: #FBBC04;
+    background: linear-gradient(135deg, rgb(26, 115, 232) 0%, rgb(13, 71, 161) 100%);
     color: white;
     padding: 40px 0;
 }
@@ -2235,7 +1841,7 @@ select {
     right: 40px;
     width: 56px;
     height: 56px;
-    background: linear-gradient(135deg, #FBBC04 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -2268,6 +1874,22 @@ select {
 }
 
 /* ==================== RESPONSIVE DESIGN ==================== */
+
+@media (max-width: 1600px) {
+
+    /* Partner Logos */
+    .partner-logos {
+        grid-template-columns: repeat(2, 2fr);
+        gap: 40px;
+        padding-right: 40px;
+    }
+
+    .partner-logo svg,
+    .partner-logo img {
+        max-width: 100px;
+    }
+
+}
 
 /* Tablet - 1024px */
 @media (max-width: 1024px) {
@@ -2303,18 +1925,6 @@ select {
 
     .typing-wrapper {
         width: 450px;
-    }
-
-    /* Partner Logos */
-    .partner-logos {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 40px;
-        padding-right: 40px;
-    }
-
-    .partner-logo svg,
-    .partner-logo img {
-        max-width: 100px;
     }
 
     /* Sections 1-2 */
@@ -2380,48 +1990,6 @@ select {
 
     .cta-heading {
         font-size: 40px;
-    }
-
-    .testimonials-section {
-        padding: 80px 20px;
-    }
-
-    .testimonials-heading {
-        font-size: 36px;
-    }
-
-    .review-ratings {
-        gap: 48px;
-        margin-bottom: 56px;
-    }
-
-    .testimonials-grid {
-        gap: 24px;
-    }
-
-    .cloud-apps-section {
-        padding: 80px 20px;
-    }
-
-    .cloud-apps-heading {
-        font-size: 36px;
-        margin-bottom: 56px;
-    }
-
-    .cloud-apps-grid {
-        gap: 24px;
-    }
-
-    .product-card {
-        padding: 36px 28px 28px;
-    }
-
-    .product-name {
-        font-size: 22px;
-    }
-
-    .product-description {
-        font-size: 14px;
     }
 
     /* Footer */
@@ -2514,7 +2082,7 @@ select {
     }
 
     .partner-logos {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr;
         gap: 32px;
     }
 
@@ -2660,94 +2228,6 @@ select {
     .cta-button {
         font-size: 14px;
         padding: 18px 48px;
-    }
-
-    .testimonials-section {
-        padding: 60px 20px;
-    }
-
-    .testimonials-heading {
-        font-size: 32px;
-        margin-bottom: 40px;
-    }
-
-    .review-ratings {
-        gap: 40px;
-        margin-bottom: 48px;
-    }
-
-    .review-logo {
-        width: 28px;
-        height: 28px;
-    }
-
-    .star {
-        width: 16px;
-        height: 16px;
-    }
-
-    .testimonials-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .testimonial-card:nth-child(-n + 3) {
-        grid-column: span 2;
-        max-width: 600px;
-        margin: 0 auto;
-    }
-
-    .testimonial-card {
-        padding: 32px 24px;
-    }
-
-    .cloud-apps-section {
-        padding: 60px 20px;
-    }
-
-    .cloud-apps-heading {
-        font-size: 32px;
-        margin-bottom: 48px;
-    }
-
-    .cloud-apps-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .product-card:nth-child(-n + 3) {
-        grid-column: span 2;
-        max-width: 600px;
-        margin: 0 auto;
-    }
-
-    .product-card {
-        padding: 32px 24px 24px;
-    }
-
-    .app-icon {
-        width: 48px;
-        height: 48px;
-        font-size: 18px;
-        margin-bottom: 20px;
-    }
-
-    .product-name {
-        font-size: 20px;
-    }
-
-    .product-description {
-        font-size: 14px;
-        margin-bottom: 28px;
-    }
-
-    .laptop-mockup {
-        margin-bottom: 28px;
-    }
-
-    .primary-button {
-        padding: 14px 28px;
-        font-size: 13px;
     }
 
     /* Footer */
@@ -3052,132 +2532,6 @@ select {
         width: 100%;
         max-width: 100%;
         padding: 18px 40px;
-        font-size: 13px;
-    }
-
-    .testimonials-section {
-        padding: 48px 16px;
-    }
-
-    .testimonials-heading {
-        font-size: 28px;
-        margin-bottom: 32px;
-    }
-
-    .review-ratings {
-        flex-direction: column;
-        gap: 24px;
-        margin-bottom: 40px;
-    }
-
-    .review-item {
-        gap: 12px;
-    }
-
-    .review-logo {
-        width: 24px;
-        height: 24px;
-    }
-
-    .review-text {
-        font-size: 13px;
-    }
-
-    .star {
-        width: 15px;
-        height: 15px;
-    }
-
-    .testimonials-grid {
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
-
-    .testimonial-card:nth-child(3) {
-        grid-column: span 1;
-    }
-
-    .testimonial-card {
-        padding: 28px 20px;
-    }
-
-    .testimonial-quote {
-        font-size: 15px;
-        margin-bottom: 20px;
-    }
-
-    .author-name {
-        font-size: 15px;
-    }
-
-    .author-title {
-        font-size: 13px;
-    }
-
-    .cloud-apps-section {
-        padding: 48px 16px;
-    }
-
-    .cloud-apps-heading {
-        font-size: 28px;
-        margin-bottom: 40px;
-    }
-
-    .cloud-apps-grid {
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
-
-    .product-card:nth-child(3) {
-        grid-column: span 1;
-    }
-
-    .product-card {
-        padding: 28px 20px 20px;
-    }
-
-    .app-icon {
-        width: 44px;
-        height: 44px;
-        font-size: 16px;
-        margin-bottom: 16px;
-    }
-
-    .product-name {
-        font-size: 20px;
-    }
-
-    .platform-badge {
-        width: 20px;
-        height: 20px;
-        font-size: 9px;
-    }
-
-    .product-description {
-        font-size: 14px;
-        margin-bottom: 24px;
-    }
-
-    .laptop-mockup {
-        margin-bottom: 24px;
-    }
-
-    .mockup-icon {
-        width: 40px;
-        height: 40px;
-    }
-
-    .mockup-text {
-        font-size: 11px;
-    }
-
-    .primary-button {
-        padding: 14px 24px;
-        font-size: 12px;
-        margin-bottom: 12px;
-    }
-
-    .secondary-link {
         font-size: 13px;
     }
 
