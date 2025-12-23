@@ -1,4 +1,17 @@
 {
+    "meta": {
+        "title": "Ads Account Rental | Thuê Tài Khoản Quảng Cáo Chuyên Nghiệp",
+        "seo": {
+            "description": "Cho thuê tài khoản quảng cáo Google, Facebook, Tiktok chất lượng cao. Tài khoản invoice đã xác minh, hỗ trợ 24/7, tối ưu chi phí. Phù hợp ngành game, crypto, thực phẩm chức năng.",
+            "og_title": "Ads Account Rental | Thuê Tài Khoản Quảng Cáo Invoice",
+            "og_description": "Dịch vụ cho thuê tài khoản quảng cáo chuyên nghiệp: Google Ads, Facebook Ads, Tiktok Ads. Tài khoản invoice đã xác minh, hỗ trợ setup & kháng chiến dịch.",
+            "twitter_title": "Ads Account Rental - Tài Khoản Quảng Cáo",
+            "twitter_description": "Cho thuê tài khoản quảng cáo chất lượng cao, tài khoản invoice đã xác minh. Hỗ trợ 24/7, chi phí tối ưu."
+        }
+    },
+    "mobile": {
+        "language": "Ngôn ngữ"
+    },
     "nav": {
         "home": "Trang Chủ",
         "products": "Sản Phẩm",
@@ -18,6 +31,147 @@
         "cta": "Tư vấn ngay"
     },
     "partner": {
-        "tiltle": "Tài khoản quảng cáo chạy được mọi ngành"
+        "title": "Tài khoản chạy được nhiều ngành",
+        "description": "Bạn đang gặp vấn đề với tài khoản quảng cáo bị hạn chế, từ chối sản phẩm khó? Chúng tôi cung cấp tài khoản:",
+        "description_bold": "đã xác minh – invoice rõ ràng – hỗ trợ setup & kháng",
+        "industry1": {
+            "title": "Trò chơi trực tuyến",
+            "description": "Tài khoản invoice – xử lý chiến dịch ngành game, cá cược, giải trí online."
+        },
+        "industry2": {
+            "title": "Tiền mã hoá",
+            "description": "Đã xác minh giấy phép, chạy ổn định các chiến dịch Crypto."
+        },
+        "industry3": {
+            "title": "Thực phẩm chức năng",
+            "description": "Hỗ trợ landing – content – hạn chế disapprove."
+        },
+        "industry4": {
+            "title": "Sản phẩm vi phạm chính sách",
+            "description": "Tài khoản trust cao, giảm checkpoint & khóa tài khoản."
+        },
+        "cta": "Tư vấn ngay"
+    },
+    "howItHelps": {
+        "title": "Các nhóm khách hàng lớn của chúng tôi",
+        "tabs": {
+            "agencies": "Gamebilling",
+            "affiliates": "Crypto",
+            "crypto": "Video smart"
+        },
+        "testimonial": {
+            "text": "\"Chiến dịch ngành game online được phân phối ổn định nhờ tài khoản Invoice đã xác minh. Ngân sách chi tiêu mượt, hạn chế gián đoạn và giúp tối ưu hiệu quả quảng cáo trong suốt quá trình chạy.\"",
+            "author": "@Sarah Johnson",
+            "role": "Khách hàng có sản phẩm trò chơi trực tuyến"
+        }
+    },
+    "process": {
+        "heading": "Quy trình cung cấp tài khoản",
+        "steps": {
+            "1": {
+                "title": "Tư vấn & đánh giá nhu cầu",
+                "description": "Tiếp nhận thông tin, phân tích ngành nghề và đề xuất loại tài khoản phù hợp nhất để triển khai quảng cáo."
+            },
+            "2": {
+                "title": "Cung cấp & phân quyền tài khoản",
+                "description": "Thiết lập tài khoản phù hợp, phân quyền quản lý và hỗ trợ khách hàng triển khai chiến dịch."
+            },
+            "3": {
+                "title": "Tài khoản hoạt động & chi tiêu ổn định",
+                "description": "Theo dõi ngân sách, hỗ trợ kiểm soát hiệu suất và cung cấp báo cáo trong suốt quá trình chạy quảng cáo."
+            }
+        }
+    },
+    "feature1": {
+        "title": "Hệ thống tài khoản quảng cáo Google dành cho chiến dịch quy mô lớn",
+        "description": "Chúng tôi cung cấp hệ thống tài khoản quảng cáo Google với khả năng đáp ứng nhu cầu triển khai chiến dịch quy mô lớn.",
+        "description2": "Phù hợp cho các doanh nghiệp, đội ngũ marketing và agency cần vận hành nhiều chiến dịch cùng lúc.",
+        "description3": "Đội ngũ hỗ trợ đồng hành trong quá trình thiết lập và triển khai, giúp quảng cáo được phân phối ổn định và hiệu quả.",
+        "platforms": [
+            "Google Ads",
+            "Microsoft Ads",
+            "DV360",
+            "Criteo",
+            "Xandr",
+            "RTB House"
+        ]
+    },
+    "feature2": {
+        "title": "Giải pháp tài khoản Invoice cho ngành quảng cáo đặc thù",
+        "description": "Tài khoản Invoice phù hợp với các ngành quảng cáo có yêu cầu kiểm duyệt cao hoặc đặc thù về nội dung.",
+        "description2": "Hỗ trợ triển khai chiến dịch đúng quy trình, đảm bảo khả năng phân phối ổn định và hạn chế gián đoạn.",
+        "description3": "Giải pháp giúp doanh nghiệp tối ưu chi tiêu và tiếp cận khách hàng hiệu quả hơn trong quá trình quảng cáo."
+    },
+    "adcore": {
+        "heading": "Hỗ trợ triển khai chiến dịch quảng cáo",
+        "description": "Chúng tôi đồng hành cùng khách hàng trong suốt quá trình vận hành chiến dịch, từ thiết lập ban đầu đến tối ưu và theo dõi hiệu quả.",
+        "awards": [
+            "Giải thưởng 1",
+            "Giải thưởng 2",
+            "Giải thưởng 3"
+        ],
+        "awardOverlay": {
+            "title": "Giải thưởng tìm kiếm Apac",
+            "year": "2024",
+            "status": "Người chiến thắng"
+        },
+        "image1": {
+            "text": "Award Ceremony Photo"
+        },
+        "image2": {
+            "text": "Team Celebration"
+        },
+        "image3": {
+            "text": "Office Team Photo"
+        }
+    },
+    "cta": {
+        "heading": "Nhận tài khoản quảng cáo invoice ngay",
+        "button": "Liên hệ ngay"
+    },
+    "footer": {
+        "highlight": {
+            "contact": {
+                "title": "Liên Hệ Chúng Tôi",
+                "desc": "Hỗ trợ khách hàng 24/7 - Phản hồi trong 2 giờ"
+            },
+            "branch": {
+                "title": "Tìm Chi Nhánh",
+                "desc": "Hơn 50 văn phòng toàn cầu"
+            },
+            "about": {
+                "title": "Về Chúng Tôi",
+                "desc": "Đối tác công nghệ hàng đầu"
+            }
+        },
+        "logo": {
+            "alt": "Logo MediaBlast"
+        },
+        "about": {
+            "description": "Chuyên cung cấp tài khoản quảng cáo invoice chất lượng cao, đã xác minh với khả năng chạy đa ngành. Hỗ trợ 24/7, tối ưu chi phí, cam kết hiệu quả quảng cáo tối đa."
+        },
+        "contact": {
+            "email": "adsaccountrental@gmail.com",
+            "phone": "+84 775 779 266"
+        },
+        "services": {
+            "title": "Dịch Vụ",
+            "google": "Quảng cáo Google",
+            "facebook": "Quảng cáo Facebook",
+            "tiktok": "Quảng cáo Tiktok",
+            "invoice": "Thuê tài khoản Invoice",
+            "crypto": "Quảng cáo Crypto",
+            "gaming": "Quảng cáo Game Online"
+        },
+        "connect": {
+            "title": "Kết Nối"
+        },
+        "social": {
+            "facebook": "Facebook",
+            "tiktok": "TikTok",
+            "instagram": "Instagram",
+            "telegram": "Telegram"
+        },
+        "copyright": "© 2025 Ads Account Rental. All rights reserved."
     }
 }

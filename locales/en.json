@@ -1,4 +1,14 @@
 {
+    "meta": {
+        "title": "Ads Account Rental | Professional Advertising Account Services",
+        "seo": {
+            "description": "Rent high-quality Google, Facebook, Tiktok advertising accounts. Verified invoice accounts, 24/7 support, optimized costs. Suitable for gaming, crypto, supplement industries.",
+            "og_title": "Ads Account Rental | Professional Invoice Account Services",
+            "og_description": "Professional advertising account rental service: Google Ads, Facebook Ads, Tiktok Ads. Verified invoice accounts, campaign setup & appeal support.",
+            "twitter_title": "Ads Account Rental - Advertising Accounts",
+            "twitter_description": "Rent high-quality advertising accounts, verified invoice accounts. 24/7 support, optimized costs."
+        }
+    },
     "nav": {
         "home": "Home",
         "products": "Products",
@@ -13,11 +23,152 @@
             "Facebook Account"
         ],
         "benefit-item-1": "Accounts that can run all product types",
-        "benefit-item-2": "Discounted rates for high spending accounts",
-        "benefit-item-3": "Accounts with fast approval & strong delivery",
-        "cta": "Get consultation now"
+        "benefit-item-2": "Volume discounts for high-spend accounts",
+        "benefit-item-3": "Accounts with fast approval & reliable delivery",
+        "cta": "Contact Now"
     },
     "partner": {
-        "tiltle": "An account that can run ads across multiple industries"
+        "title": "Accounts for Multiple Industries",
+        "description": "Having issues with restricted ad accounts or disapproved products? We provide:",
+        "description_bold": "verified accounts – clear invoices – setup & appeal support",
+        "industry1": {
+            "title": "Online Games",
+            "description": "Invoice accounts – handle campaigns in gaming, betting, online entertainment."
+        },
+        "industry2": {
+            "title": "Cryptocurrency",
+            "description": "Verified licenses, stable Crypto campaign execution."
+        },
+        "industry3": {
+            "title": "Functional Foods",
+            "description": "Landing page – content support – minimize disapprovals."
+        },
+        "industry4": {
+            "title": "Policy-violating Products",
+            "description": "High-trust accounts, reduce checkpoints & account locks."
+        },
+        "cta": "Consult Now"
+    },
+    "howItHelps": {
+        "title": "Our Major Customer Segments",
+        "tabs": {
+            "agencies": "Gamebilling",
+            "affiliates": "Crypto",
+            "crypto": "Video Smart"
+        },
+        "testimonial": {
+            "text": "\"Our online gaming campaigns run smoothly thanks to verified Invoice accounts. Budget spends consistently, minimal disruptions, and optimized ad performance throughout the campaign.\"",
+            "author": "@Sarah Johnson",
+            "role": "Client with online gaming products"
+        }
+    },
+    "process": {
+        "heading": "Account Provisioning Process",
+        "steps": {
+            "1": {
+                "title": "Consultation & Needs Assessment",
+                "description": "We gather information, analyze your industry, and recommend the most suitable account type for your advertising needs."
+            },
+            "2": {
+                "title": "Account Setup & Permission Assignment",
+                "description": "We set up the appropriate account, assign management permissions, and support you in launching campaigns."
+            },
+            "3": {
+                "title": "Account Operation & Stable Spending",
+                "description": "We monitor budgets, assist with performance control, and provide reporting throughout the ad campaign."
+            }
+        }
+    },
+    "feature1": {
+        "title": "Google Ad Account System for Large-Scale Campaigns",
+        "description": "We provide a Google ad account system capable of handling large-scale campaign deployment.",
+        "description2": "Suitable for businesses, marketing teams, and agencies needing to run multiple campaigns simultaneously.",
+        "description3": "Our support team accompanies you during setup and implementation, ensuring stable and effective ad delivery.",
+        "platforms": [
+            "Google Ads",
+            "Microsoft Ads",
+            "DV360",
+            "Criteo",
+            "Xandr",
+            "RTB House"
+        ]
+    },
+    "feature2": {
+        "title": "Invoice Account Solutions for Specialized Advertising",
+        "description": "Invoice accounts are suitable for industries with high approval requirements or specialized content.",
+        "description2": "We assist in proper campaign deployment, ensuring stable delivery and minimizing disruptions.",
+        "description3": "This solution helps businesses optimize spending and reach customers more effectively during advertising."
+    },
+    "adcore": {
+        "heading": "Campaign Implementation Support",
+        "description": "We partner with clients throughout the campaign operation process, from initial setup to optimization and performance tracking.",
+        "awards": [
+            "Award 1",
+            "Award 2",
+            "Award 3"
+        ],
+        "awardOverlay": {
+            "title": "Apac Search Award",
+            "year": "2024",
+            "status": "Winner"
+        },
+        "image1": {
+            "text": "Award Ceremony Photo"
+        },
+        "image2": {
+            "text": "Team Celebration"
+        },
+        "image3": {
+            "text": "Office Team Photo"
+        }
+    },
+    "cta": {
+        "heading": "Get Your Invoice Ad Account Now",
+        "button": "Contact Now"
+    },
+    "footer": {
+        "highlight": {
+            "contact": {
+                "title": "Contact Us",
+                "desc": "24/7 Customer Support - Response within 2 hours"
+            },
+            "branch": {
+                "title": "Find a Branch",
+                "desc": "Over 50 global offices"
+            },
+            "about": {
+                "title": "About Us",
+                "desc": "Leading Technology Partner"
+            }
+        },
+        "logo": {
+            "alt": "MediaBlast Logo"
+        },
+        "about": {
+            "description": "Specializing in providing high-quality, verified invoice advertising accounts with multi-industry compatibility. 24/7 support, cost optimization, committed to maximum advertising effectiveness."
+        },
+        "contact": {
+            "email": "adsaccountrental@gmail.com",
+            "phone": "+84 775 779 266"
+        },
+        "services": {
+            "title": "Services",
+            "google": "Google Ads",
+            "facebook": "Facebook Ads",
+            "tiktok": "Tiktok Ads",
+            "invoice": "Invoice Account Rental",
+            "crypto": "Crypto Ads",
+            "gaming": "Online Game Ads"
+        },
+        "connect": {
+            "title": "Connect"
+        },
+        "social": {
+            "facebook": "Facebook",
+            "tiktok": "TikTok",
+            "instagram": "Instagram",
+            "telegram": "Telegram"
+        },
+        "copyright": "© 2025 Ads Account Rental. All rights reserved."
     }
 }

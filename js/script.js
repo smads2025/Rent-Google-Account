@@ -35,21 +35,17 @@ const getInitialLang = () => localStorage.getItem('language') || 'vi';
 let texts = typingI18n[getInitialLang()];
 let textIndex = 0;
 let charIndex = 0;
-let isDeleting = false; // QUAN TRỌNG: Phải là FALSE khi bắt đầu
+let isDeleting = false;
 
 // ============ Initialize Typing Effect ============
 function initTypingEffect() {
-    console.log("🔄 INIT: Resetting typing effect...");
-
-    // RESET HOÀN TOÀN
+    // RESET 
     const currentLang = getInitialLang();
     texts = typingI18n[currentLang];
     textIndex = 0;
     charIndex = 0;
-    isDeleting = false; // ĐẢM BẢO LÀ FALSE
+    isDeleting = false; // FALSE
     typingText.textContent = '';
-
-    console.log(`✅ Reset done: textIndex=${textIndex}, charIndex=${charIndex}, isDeleting=${isDeleting}`);
 
     // Start typing effect after 1 second
     setTimeout(typeEffect, 1000);
@@ -59,51 +55,36 @@ function initTypingEffect() {
 function typeEffect() {
     const currentText = texts[textIndex];
 
-    console.log(`=== DEBUG ===`);
-    console.log(`Text: "${currentText}"`);
-    console.log(`isDeleting: ${isDeleting} (QUAN TRỌNG: phải là false khi gõ!)`);
-    console.log(`charIndex: ${charIndex}/${currentText.length}`);
-
-    // FIX QUAN TRỌNG: Nếu isDeleting là true khi không nên
     if (isDeleting && charIndex === 0) {
-        console.log("🚨 ERROR: isDeleting=true khi chưa gõ gì! Fixing...");
         isDeleting = false;
     }
 
     if (isDeleting) {
-        // ========== ĐANG XOÁ ==========
         if (charIndex > 0) {
             charIndex--;
             typingText.textContent = currentText.substring(0, charIndex);
-            console.log(`🗑️  Xoá: "${typingText.textContent}"`);
 
             if (charIndex === 0) {
-                // Xoá xong -> DỪNG 2s -> GÕ TEXT MỚI
-                console.log(`✅ Xoá xong -> Dừng 2000ms -> Chuyển text mới`);
                 setTimeout(() => {
-                    isDeleting = false; // RESET VỀ FALSE
+                    isDeleting = false; // RESET  FALSE
                     textIndex = (textIndex + 1) % texts.length;
                     charIndex = 0;
                     typingText.textContent = '';
-                    typeEffect(); // Gọi ngay để gõ text mới
+                    typeEffect();
                 }, 100);
             } else {
                 setTimeout(typeEffect, 80);
             }
         }
     } else {
-        // ========== ĐANG GÕ ==========
         if (charIndex < currentText.length) {
             charIndex++;
             typingText.textContent = currentText.substring(0, charIndex);
-            console.log(`✍️  Gõ: "${typingText.textContent}"`);
 
             if (charIndex === currentText.length) {
-                // GÕ XONG -> DỪNG 3s -> MỚI XOÁ
-                console.log(`✅ Gõ xong "${currentText}" -> Dừng 3000ms -> Sau đó mới xoá`);
                 setTimeout(() => {
-                    isDeleting = true; // CHỈ SET TRUE SAU KHI ĐÃ DỪNG
-                    typeEffect(); // Gọi để xoá
+                    isDeleting = true;
+                    typeEffect();
                 }, 3000);
             } else {
                 setTimeout(typeEffect, 120);
@@ -211,7 +192,6 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
             b.classList.toggle('active', b.dataset.lang === lang);
         });
 
-        // Reset typing effect với ngôn ngữ mới
         texts = typingI18n[lang];
         textIndex = 0;
         charIndex = 0;
@@ -318,4 +298,37 @@ scrollToTopBtn.addEventListener('click', function () {
         top: 0,
         behavior: 'smooth'
     });
+});
+
+// Scroll Spy đơn giản
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
+    const sections = document.querySelectorAll('section[id]');
+    const header = document.querySelector('header');
+
+    function updateActiveMenu() {
+        const scrollPos = window.scrollY + header.offsetHeight + 50;
+        let current = 'home';
+
+        // Tìm section đang hiển thị
+        sections.forEach(section => {
+            if (section.offsetTop <= scrollPos) {
+                current = section.id;
+            }
+        });
+
+        // Cập nhật active class
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    // Chạy khi scroll
+    window.addEventListener('scroll', updateActiveMenu);
+
+    // Chạy lần đầu
+    updateActiveMenu();
 });
